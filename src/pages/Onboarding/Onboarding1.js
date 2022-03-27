@@ -1,11 +1,12 @@
 import {View, Text, StyleSheet} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import LottieView from 'lottie-react-native';
 import {Colors} from '../../constants/Colors';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import ArrowRight from '../../constants/Images';
 import {useNavigation} from '@react-navigation/native';
 import AppScreens from '../../constants/Screens';
+import {useRef} from 'react';
 
 const Onboarding1 = () => {
   const navigation = useNavigation();
@@ -13,15 +14,22 @@ const Onboarding1 = () => {
   const nextPage = () => {
     navigation.navigate(AppScreens.Onboarding2);
   };
+  const animation = useRef(null);
+
+  useEffect(() => {
+    animation.current.play(0, 200);
+  }, []);
 
   return (
     <View style={styles.container}>
       <View style={styles.lottieContainer}>
         <Text style={styles.textTitle}>Quiz Show</Text>
         <LottieView
+          ref={animation}
           style={{width: 250}}
+          loop={false}
           autoPlay
-          source={require('../../Lottie/hi.json')}
+          source={require('../../Lottie/powerful-mind.json')}
         />
       </View>
       <View style={styles.titleAndButton}>
@@ -30,7 +38,11 @@ const Onboarding1 = () => {
 dedicate to it?`}
         </Text>
         <TouchableOpacity onPress={nextPage} style={styles.buton}>
-          <ArrowRight />
+          <LottieView
+            style={{width: 60, height: 60}}
+            autoPlay
+            source={require('../../Lottie/Go.json')}
+          />
         </TouchableOpacity>
       </View>
     </View>
@@ -65,7 +77,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buton: {
-    backgroundColor: Colors.dark,
     marginBottom: 30,
     width: 60,
     height: 60,

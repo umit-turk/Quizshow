@@ -3,26 +3,42 @@ import React from 'react';
 import LottieView from 'lottie-react-native';
 import {Colors} from '../../constants/Colors';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import ArrowRight from '../../constants/Images';
+import {useNavigation} from '@react-navigation/native';
+import AppScreens from '../../constants/Screens';
+import {useEffect} from 'react';
+import {useRef} from 'react';
 
 const Onboarding2 = () => {
+  const navigation = useNavigation();
+
+  const goToLogin = () => {
+    navigation.navigate(AppScreens.Login);
+  };
+
+  const animation = useRef(null);
+
+  useEffect(() => {
+    animation.current.play(0, 100);
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.lottieContainer}>
         <Text style={styles.textTitle}>Quiz Show</Text>
         <LottieView
+          ref={animation}
           style={{width: 250}}
+          loop={false}
           autoPlay
-          source={require('../../Lottie/hi.json')}
+          source={require('../../Lottie/book-idea.json')}
         />
       </View>
       <View style={styles.titleAndButton}>
         <Text style={styles.titleText}>
-          {`Want to learn something new but can’t seem to find the time to
-dedicate to it?`}
+          {`It’s time to test your knowledge on the concepts so far. Blended learning has been interpreted in various ways. `}
         </Text>
-        <TouchableOpacity style={styles.buton}>
-          <ArrowRight />
+        <TouchableOpacity onPress={goToLogin} style={styles.buton}>
+          <LottieView autoPlay source={require('../../Lottie/Go.json')} />
         </TouchableOpacity>
       </View>
     </View>
@@ -57,7 +73,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buton: {
-    backgroundColor: Colors.dark,
     marginBottom: 30,
     width: 60,
     height: 60,
