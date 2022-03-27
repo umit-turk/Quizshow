@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 import LottieView from 'lottie-react-native';
 import {Colors} from '../../constants/Colors';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import ArrowRight from '../../constants/Images';
 import {useNavigation} from '@react-navigation/native';
 import AppScreens from '../../constants/Screens';
 import {useRef} from 'react';
