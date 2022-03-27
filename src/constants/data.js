@@ -8,27 +8,27 @@ export default [
     icon: '2',
   },
   {
-    name: 'Entertainment:Books',
+    name: 'Books',
     icon: '3',
   },
   {
-    name: 'Entertainment:Film',
+    name: 'Film',
     icon: '4',
   },
   {
-    name: 'Entertainment:Music',
+    name: 'Music',
     icon: '5',
   },
   {
-    name: 'Entertainment:Musical & Theatres',
+    name: 'Musical & Theatres',
     icon: '6',
   },
   {
-    name: 'Entertainment:Television',
+    name: 'Television',
     icon: '7',
   },
   {
-    name: 'Entertainment:Video Games',
+    name: 'Video Games',
     icon: '8',
   },
   {
@@ -80,7 +80,7 @@ export default [
     icon: '20',
   },
   {
-    name: 'Entertainment:Comics',
+    name: 'Comics',
     icon: '21',
   },
   {
@@ -88,11 +88,11 @@ export default [
     icon: '22',
   },
   {
-    name: 'Entertainment:Japanese Anime',
+    name: 'Japanese Anime',
     icon: '23',
   },
   {
-    name: 'Entertainment:Cartoon',
+    name: 'Cartoon',
     icon: '24',
   },
 ];
