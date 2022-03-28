@@ -10,7 +10,7 @@ const SplashScreen = props => {
   useEffect(() => {
     setTimeout(() => {
       setAuthLoaded(true);
-    }, 3000);
+    }, 2000);
   }, []);
 
   useEffect(() => {

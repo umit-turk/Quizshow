@@ -13,3 +13,7 @@ export default {
   f21: normalize(21),
   f24: normalize(24),
 };
+
+export const FONTS = {
+  Poppins: 'Poppins-Medium',
+};

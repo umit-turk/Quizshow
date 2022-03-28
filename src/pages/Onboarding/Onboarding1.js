@@ -6,6 +6,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
 import AppScreens from '../../constants/Screens';
 import {useRef} from 'react';
+import {FONTS} from '../../constants/FontSize';
 
 const Onboarding1 = () => {
   const navigation = useNavigation();
@@ -38,7 +39,7 @@ dedicate to it?`}
         </Text>
         <TouchableOpacity onPress={nextPage} style={styles.buton}>
           <LottieView
-            style={{width: 60, height: 60}}
+            style={{width: 80, height: 80}}
             autoPlay
             source={require('../../Lottie/Go.json')}
           />
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     fontSize: 30,
     color: Colors.primary,
+    fontFamily: FONTS.Poppins,
   },
   lottieContainer: {
     flex: 1,
@@ -74,11 +76,12 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: Colors.secondary,
     textAlign: 'center',
+    fontFamily: FONTS.Poppins,
   },
   buton: {
     marginBottom: 30,
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',

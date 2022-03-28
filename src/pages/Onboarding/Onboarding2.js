@@ -7,6 +7,7 @@ import {useNavigation} from '@react-navigation/native';
 import AppScreens from '../../constants/Screens';
 import {useEffect} from 'react';
 import {useRef} from 'react';
+import {FONTS} from '../../constants/FontSize';
 
 const Onboarding2 = () => {
   const navigation = useNavigation();
@@ -55,6 +56,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     fontSize: 30,
     color: Colors.primary,
+    fontFamily: FONTS.Poppins,
   },
   lottieContainer: {
     flex: 1,
@@ -71,11 +73,12 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: Colors.secondary,
     textAlign: 'center',
+    fontFamily: FONTS.Poppins,
   },
   buton: {
     marginBottom: 30,
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',

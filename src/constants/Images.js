@@ -16,20 +16,20 @@ export const ArrowRight = () => {
     <Svg
       width="26"
       height="26"
-      viewBox="0 0 28 28"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <Path
-        d="M5.8335 14H22.1668"
-        stroke="white"
-        strokeWidth="3"
+        d="M19 12L5 12"
+        stroke="#9DA6BA"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <Path
-        d="M14 5.83333L22.1667 14L14 22.1667"
-        stroke="white"
-        strokeWidth="3"
+        d="M12 19L5 12L12 5"
+        stroke="#9DA6BA"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
