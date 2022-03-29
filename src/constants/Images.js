@@ -470,3 +470,58 @@ export const Kid = () => {
     </Svg>
   );
 };
+
+export const ArrowRightCircle = () => {
+  return (
+    <Svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <Path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12.0001 21.2497C18.9371 21.2497 21.2501 18.9367 21.2501 11.9997C21.2501 5.0627 18.9371 2.74969 12.0001 2.74969C5.06312 2.74969 2.75012 5.0627 2.75012 11.9997C2.75012 18.9367 5.06312 21.2497 12.0001 21.2497Z"
+        stroke="#9AA7C1"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M10.5582 15.4714C10.5582 15.4714 14.0442 13.0794 14.0442 11.9994C14.0442 10.9194 10.5582 8.52937 10.5582 8.52937"
+        stroke="#9AA7C1"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
+export const ArrowRightCircleBlue = () => {
+  return (
+    <Svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <Path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 21.2497C18.937 21.2497 21.25 18.9367 21.25 11.9997C21.25 5.0627 18.937 2.74969 12 2.74969C5.063 2.74969 2.75 5.0627 2.75 11.9997C2.75 18.9367 5.063 21.2497 12 21.2497Z"
+        stroke="#0486FE"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M10.5581 15.4714C10.5581 15.4714 14.0441 13.0794 14.0441 11.9994C14.0441 10.9194 10.5581 8.52937 10.5581 8.52937"
+        stroke="#0486FE"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+};
