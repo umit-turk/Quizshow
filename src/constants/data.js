@@ -1,10 +1,5 @@
 export default [
   {
-    name: 'AnyCategory',
-    icon: '1',
-    category: null,
-  },
-  {
     name: 'General Knowladge',
     icon: '2',
     category: 9,

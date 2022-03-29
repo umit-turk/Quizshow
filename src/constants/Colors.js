@@ -5,5 +5,6 @@ export const Colors = {
   blue: '#1443C3',
   lightBlue: '#F6F7FC',
   borderBlue: '#0085FF',
+  secondaryBorder: '#EAEEF5',
   white: 'white',
 };
